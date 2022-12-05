@@ -45,7 +45,11 @@ def pushBackToStack(stack: list, x: int) -> bool:
   if x == 0:
     return False
   elif x == 11:
-    pass
+    print("Pushing TQ onto stack.")
+    stack.append('Q')
+    stack.append('T')
+    print(stack)
+    return True
   elif x == 16:
     print("Pushing TQ onto stack.")
     stack.append('Q')
@@ -66,8 +70,22 @@ def pushBackToStack(stack: list, x: int) -> bool:
     stack.append('-')
     print(stack)
     return True
+  elif x == 27:
+    print("Pushing ε (epsilon) onto stack.")
+    stack.append("ε")
+    print(stack)
+    return True
+  elif x == 28:
+    print("Pushing ε (epsilon) onto stack.")
+    stack.append("ε")
+    print(stack)
+    return True
   elif x == 31:
-    pass
+    print("Pushing FR onto stack.")
+    stack.append("R")
+    stack.append("F")
+    print(stack)
+    return True
   elif x == 36:
     print("Pushing FR onto stack.")
     stack.append("R")
@@ -75,9 +93,15 @@ def pushBackToStack(stack: list, x: int) -> bool:
     print(stack)
     return True
   elif x == 42:
-    pass
+    print("Pushing ε (epsilon) onto stack.")
+    stack.append("ε")
+    print(stack)
+    return True
   elif x == 43:
-    pass
+    print("Pushing ε (epsilon) onto stack.")
+    stack.append("ε")
+    print(stack)
+    return True
   elif x == 44:
     print("Pushing *FR onto stack.")
     stack.append("R")
@@ -93,7 +117,10 @@ def pushBackToStack(stack: list, x: int) -> bool:
     print(stack)
     return True
   elif x == 47:
-    pass
+    print("Pushing ε (epsilon) onto stack.")
+    stack.append("ε")
+    print(stack)
+    return True
   elif x == 48:
     print("Pushing ε (epsilon) onto stack.")
     stack.append("ε")
